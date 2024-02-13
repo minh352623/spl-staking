@@ -1,0 +1,20 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.testnet]
+spl_token_staking = "STAKEGztX7S1MUHxcQHieZhELCntb9Ys9BgUbeEtMu2"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "testnet"
+wallet = "/Users/minh/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts -r tests/hooks.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/initialize-stake-pool.ts -r tests/hooks.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/add-reward-pool.ts -r tests/hooks.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/deposit.ts -r tests/hooks.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/claim-all.ts -r tests/hooks.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/withdraw.ts -r tests/hooks.ts"
